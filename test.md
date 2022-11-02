@@ -26,7 +26,7 @@ Depending on the type of file and external source, the process of obtaining data
 > **Prerequisites:**
 “Web browser direct access” property in Momentum is activated. **YouTube link is an exception. YouTube video will be loading trough “A” way independently on value of “browser access” property.**
 
-![ExternalKnowledgesA](https://raw.githubusercontent.com/brighteye-diagrams/Test/main/ExternalKnowledgesA.svg?token=GHSAT0AAAAAAB2P7NOVPRKBSP7CU2OPNQ2IY3CKSRA)
+![ExternalKnowledgesA](https://github.com/brighteye-diagrams/Test/blob/main/ExternalKnowledgesA.svg)
 
 To display external knowledge by the web client, the web server requests the knowledge properties from the Momentum server. The web server analyzes the file type of the external knowledge, depending on it forms the structure of the web page and sets the URL knowledge property as the attribute value of the corresponding DOM element of the HTML page, for example, `<img src=”URL property”/>`. If authentication is required to access the file, as in the case of SharePoint, the web server generates a new pre-authenticated link to the file and sets it as the value of the source attribute. Since the knowledge link is defined as a property of the basic html tag, the browser automatically loads the file.
 
