@@ -19,7 +19,7 @@ Momentum supports connection to the following external sources:
 Starting from version 17.3.0, it became possible to directly access the external knowledge from the browser – "client access" mode, which gives better performance for big files. This option can be activated by setting “Web browser direct access” property of knowledge. 
 Depending on the type of file and external source, the process of obtaining data from external knowledge may differ. The table below represents methods of loading external knowledge files that Momentum uses depending on the type of files (columns) and data sources (rows).
 
-![KnowledgeModes](/.attachments/KnowledgeModesPIC.drawio.png)
+![KnowledgeModes](https://github.com/brighteye-diagrams/Test/blob/main/KnowledgeModesPIC.png)
 
 ## "Method A". Set URL directly to DOM element
 
@@ -38,7 +38,7 @@ If connection to file sources is fast and stable, this option will be the best a
 > **Prerequisites:**
 “Web browser direct access” property in Momentum is activated. 
 
-![ExternalKnowledgesB](https://raw.githubusercontent.com/brighteye-diagrams/Test/main/ExternalKnowledgesB.svg?token=GHSAT0AAAAAAB2P7NOUEQIIHYYANUHZX7DWY3CKS7Q)
+![ExternalKnowledgesB](https://github.com/brighteye-diagrams/Test/blob/main/ExternalKnowledgesB.svg)
 
 To display external knowledge by the web client, the web server requests the knowledge properties from the Momentum server. The web server analyzes the file type of external knowledge, and depending on it forms the general structure of the web page. During the generation of a web page, the web server calls the JS method FETCH, which is executed by the browser and whose argument is the URL knowledge property. As a result of executing the FETCH URL method, the browser downloads the knowledge file from an external data source and displays it on the web client page.
 Since method "B" in the current version is used to download pdf files, the open library pdf.js is used to display them on the web page.
@@ -51,7 +51,7 @@ If connection to file sources is fast and stable, this option will be the best a
 > **Prerequisites:**
 Specific file type and external source.
 
-![ExternalKnowledgesC](https://raw.githubusercontent.com/brighteye-diagrams/Test/main/ExternalKnowledgesC.svg?token=GHSAT0AAAAAAB2P7NOVPGW47RV42L6JP2VYY3CKTBQ)
+![ExternalKnowledgesC](https://github.com/brighteye-diagrams/Test/blob/main/ExternalKnowledgesC.svg)
 
 To display external knowledge by the web client, the web server requests knowledge properties from the Momentum server. The web server analyzes the file type of external knowledge, and depending on it forms the general structure of the web page. During the generation of a web page, the web server sends a request to the Momentum server to download the knowledge file, if the type of external source is not local file storage. The Momentum server downloads data to its cache using the URL property link and transfers them to the web server. The web server stores data in its cache and ensures that the file is displayed on the web page. If the type of external source is local file storage Momentum server transfer the file directly to web server.
 
